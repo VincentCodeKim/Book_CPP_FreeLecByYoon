@@ -1,11 +1,11 @@
 /*
-   PersonCount1.cpp
+PersonCount1.cpp
 */
 #include<iostream>
 using std::cout;
 using std::endl;
 
-int count=1;
+int count = 1;
 
 class Person
 {
@@ -15,12 +15,12 @@ public:
 	Person(char* _name, int _age)
 	{
 		strcpy(name, _name);
-		age=_age;
-		cout<<count++<<"¹øÂ° Person °´Ã¼ »ý¼º"<<endl;
+		age = _age;
+		cout << count++ << "ë²ˆì§¸ Persin ê°œì²´ ìƒì„±" << endl;
 	}
 	void ShowData(){
-		cout<<"ÀÌ¸§: "<<name;
-		cout<<"³ªÀÌ: "<<age;
+		cout << "ì´ë¦„: " << name;
+		cout << "ë‚˜ì´: " << age;
 	}
 };
 
