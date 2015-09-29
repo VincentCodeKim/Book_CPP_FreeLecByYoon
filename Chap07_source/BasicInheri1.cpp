@@ -1,6 +1,3 @@
-/*
-   BasicInheri1.cpp
-*/
 
 #include <iostream>
 using std::endl;
@@ -19,15 +16,15 @@ public:
 		return name;
 	}
 
-	Person(int _age=1, char* _name="noname"){
-		age=_age;
+	Person(int _age = 1, char* _name = "noname"){
+		age = _age;
 		strcpy(name, _name);
 	}
 };
 
-class Student: public Person
+class Student : public Person
 {
-	char major[20]; //Àü°ø
+	char major[20]; //Ã€Ã¼Â°Ã¸
 public:
 	Student(char* _major){
 		strcpy(major, _major);
@@ -36,9 +33,9 @@ public:
 		return major;
 	}
 	void ShowData() const {
-		cout<<"ÀÌ¸§: "<<GetName()<<endl;
-		cout<<"³ªÀÌ: "<<GetAge()<<endl;
-		cout<<"Àü°ø: "<<GetMajor()<<endl;
+		cout << "ì´ë¦„: " << GetName() << endl;
+		cout << "ë‚˜ì´: " << GetAge() << endl;
+		cout << "ì „ê³µ: " << GetMajor() << endl;
 	}
 };
 
